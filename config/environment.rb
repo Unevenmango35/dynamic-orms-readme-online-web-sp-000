@@ -14,3 +14,4 @@ SQL
 
 DB[:conn].execute(sql)
 DB[:conn].results_as_hash = true
+#return it as a hash with the column names as keys
