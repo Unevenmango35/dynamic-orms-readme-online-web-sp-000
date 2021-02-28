@@ -3,8 +3,8 @@ require 'active_support/inflector'
 
 class Song
 
-#pluralize method is provided to us by the active_support/inflector
-  def self.table_name
+  #pluralize method is provided to us by the active_support/inflector
+  def self.table_name #grabs us the table name
     self.to_s.downcase.pluralize
   end
 
