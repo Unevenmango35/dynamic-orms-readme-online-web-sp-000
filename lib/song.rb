@@ -3,7 +3,7 @@ require 'active_support/inflector'
 
 class Song
 
-
+#pluralize method is provided to us by the active_support/inflector
   def self.table_name
     self.to_s.downcase.pluralize
   end
