@@ -8,7 +8,7 @@ class Song
     self.to_s.downcase.pluralize
   end
 
-  def self.column_names
+  def self.column_names #grabs us those column names
     DB[:conn].results_as_hash = true
 
     sql = "pragma table_info('#{table_name}')"
