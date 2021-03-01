@@ -25,7 +25,7 @@ class Song
     attr_accessor col_name.to_sym
   end
 
-  def initialize(options={})
+  def initialize(options={}) #metaprogramming #send method to interpolate the name of each hash key as a method that we set equal to that key's value
     options.each do |property, value|
       self.send("#{property}=", value)
     end
